@@ -9,5 +9,6 @@ class Pastel:
     SOFT_YELLOW = "\033[93m"
     END = "\033[0m"
     BOLD = "\033[1m"
+    # I ran this code and no errors yet so that is a good sign :)
 
     
