@@ -1,14 +1,16 @@
 The roadmap for my budger tracker project is as follows: 
-- Accept GitHub repository setup and initial planning.
-- Create a code repository on GitHub
-- Commit changes in the readme.md file for a grade
-- Make sure the commit is located in our GitHub KSU-IS organization
-- Read the code and try to run; see if there is errors or things you like about the code that could be improved
-- TURN IN SPRINT 1 ASSIGNMENT
+- [x] Accept GitHub repository setup and initial planning.
+- [x] Create a code repository on GitHub
+- [x] Commit changes in the readme.md file for a grade
+- [x] Make sure the commit is located in our GitHub KSU-IS organization
+- [x] Read the code and try to run; see if there is errors or things you like about the code that could be improved
+- [x] TURN IN SPRINT 1 ASSIGNMENT
 
-- I created my own python file in the repository called Mine_pastel_budget.py
-- Began building some code on my own in the Mine_pastel_budget.py file
-
+- [x] I created my own python file in the repository called Mine_pastel_budget.py
+- [x] Began building some code on my own in the Mine_pastel_budget.py file
+- [x] Added some color codes to the Mine_pastel_budget.py file for future use in the project
+- [x] Committed the changes to the repository with a message describing the changes made
+-
 
 
 
