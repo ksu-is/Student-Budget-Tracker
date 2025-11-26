@@ -52,3 +52,4 @@ class BudgetTracker:
         else:
             for descrpt, amnt in self.expenses:
                 print(f"{Pastel.PEACH}   • {descrpt}: ${amnt:.2f} 🧾{Pastel.END}")
+        print(f"{Pastel.LAVENDER}📊 Total Expense: ${self.total_expenses():.2f}{Pastel.END}")
