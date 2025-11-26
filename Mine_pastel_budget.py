@@ -22,3 +22,18 @@ BANNER = f"""
 # Ran this code and no errors yet so that is a good sign :)
 # I was hoping to see it but I realized I forgot to add the print function to see it.
 # Removed previous print function
+
+class BudgetTracker:
+    def __init__(self):
+        self.budget = 0.0
+        self.expenses = []
+
+    def adding_income(self, amount: float):
+        self.budget += amount
+        print(f"{Pastel.MINT} Income added! Total Income: ${self.income:.2f}{Pastel.END}")
+
+    def adding_expense(self, description: str, amount: float):
+        self.expenses.append((description, amount))
+        print(f"{Pastel.SOFT_YELLOW}🛒 Expense added: {description} - ${amount:.2f}{Pastel.END}")
+
+
