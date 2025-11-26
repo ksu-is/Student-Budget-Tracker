@@ -19,6 +19,6 @@ BANNER = f"""
    ╚════════════════════════════════════════════╝
 {Pastel.END}
 """
-#ran this code and no errors yet so that is a good sign :)
+# Ran this code and no errors yet so that is a good sign :)
 # I was hoping to see it but I realized I forgot to add the print function to see it.
-print(BANNER) 
+# Removed previous print function
