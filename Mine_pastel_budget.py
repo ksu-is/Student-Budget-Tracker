@@ -34,6 +34,8 @@ class BudgetTracker:
 
     def adding_expense(self, description: str, amount: float):
         self.expenses.append((description, amount))
-        print(f"{Pastel.SOFT_YELLOW}🛒 Expense added: {description} - ${amount:.2f}{Pastel.END}")
+        print(f"{Pastel.SOFT_YELLOW} Expense added: {description} - ${amount:.2f}{Pastel.END}")
 
+    def total_expenses(self): -> float:
+        return sum(amount for _, amount in self.expenses)
 
