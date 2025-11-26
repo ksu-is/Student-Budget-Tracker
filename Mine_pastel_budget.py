@@ -43,3 +43,12 @@ class BudgetTracker:
     def remaining_balance(self) -> float:
         return self.income - self.total_expenses()
     
+    def display_summary(self):
+        print(f"\n{Pastel.LAVENDER}{Pastel.BOLD}💼  Budget Summary  💼{Pastel.END}")
+        print(f"{Pastel.MINT}💵 Total Income: ${self.income:.2f}{Pastel.END}")
+        print(f"{Pastel.PINK}📘 Expenses:{Pastel.END}")
+        if not self.expenses:
+            print(f"{Pastel.PEACH}  (No expenses recorded yet).{Pastel.END}")
+        else:
+            for descrpt, amnt in self.expenses:
+                print(f"{Pastel.PEACH}   • {descrpt}: ${amnt:.2f} 🧾{Pastel.END}")
