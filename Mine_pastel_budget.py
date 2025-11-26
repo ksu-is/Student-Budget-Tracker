@@ -25,11 +25,11 @@ BANNER = f"""
 
 class BudgetTracker:
     def __init__(self):
-        self.budget = 0.0
+        self.income = 0.0
         self.expenses = []
 
     def adding_income(self, amount: float):
-        self.budget += amount
+        self.income += amount
         print(f"{Pastel.MINT}✨ Income added! Total Income: ${self.income:.2f}{Pastel.END}")
 
     def adding_expense(self, description: str, amount: float):
@@ -38,4 +38,8 @@ class BudgetTracker:
 
     def total_expenses(self) -> float:
         return sum(amount for _, amount in self.expenses)
+        #ran this code and no errors yet so that is a good sign
 
+    def remaining_balance(self) -> float:
+        return self.income - self.total_expenses()
+    
