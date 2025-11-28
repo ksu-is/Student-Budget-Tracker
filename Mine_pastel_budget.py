@@ -53,3 +53,20 @@ class BudgetTracker:
             for descrpt, amnt in self.expenses:
                 print(f"{Pastel.PEACH}   • {descrpt}: ${amnt:.2f} 🧾{Pastel.END}")
         print(f"{Pastel.LAVENDER}📊 Total Expense: ${self.total_expenses():.2f}{Pastel.END}")
+
+
+        balence = self.remaining_balance()
+        balence_color = Pastel.MINT if balence >= 0 else Pastel.PEACH
+        emoji = "🎉" if balence >= 0 else "⚠️"
+        print(f"{balence_color}🌿 Remaining Balance: ${balence:.2f} {emoji}{Pastel.END}\n")
+        # ran this code and no errors yet so that is a good sign :)
+
+
+def safe_input_float(prompt: str) -> float:
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print(f"{Pastel.PEACH}⚠️ Invalid number entered. Please enter a valid number.{Pastel.END}")
+            return None
+        
