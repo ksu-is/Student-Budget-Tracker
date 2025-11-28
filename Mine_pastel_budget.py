@@ -69,4 +69,4 @@ def safe_input_float(prompt: str) -> float:
         except ValueError:
             print(f"{Pastel.PEACH}⚠️ Invalid number entered. Please enter a valid number.{Pastel.END}")
             return None
-        
+        #This coded loop will keep asking until a valid float is entered.
