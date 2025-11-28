@@ -85,3 +85,8 @@ def safe_input_float(prompt: str) -> float:
             return None
         # This coded loop will keep asking until a valid float is entered.
         # Ran the code with the "while True" loop so hopeful that is a good sign. This is my first time using it.
+
+
+if __name__ == "__main__":
+    print (BANNER)
+    print (f"{Pastel.LAVENDER}Welcome to the your Budget Tracker! 🌈✨{Pastel.END}")
