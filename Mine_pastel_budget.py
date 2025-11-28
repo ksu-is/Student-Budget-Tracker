@@ -49,6 +49,8 @@ class BudgetTracker:
 
     def remaining_balance(self) -> float:
         return self.income - self.total_expenses()
+    # This function will calculate the remaining balance by subtracting total expenses from income
+
     
     def display_summary(self):
         print(f"\n{Pastel.LAVENDER}{Pastel.BOLD}💼  Budget Summary  💼{Pastel.END}")
@@ -69,7 +71,10 @@ class BudgetTracker:
         emoji = "🎉" if balence >= 0 else "⚠️"
         print(f"{balence_color}🌿 Remaining Balance: ${balence:.2f} {emoji}{Pastel.END}\n")
         # ran this code and no errors yet so that is a good sign :)
-    
+        # Defined balence variable to store the remaining balance
+        # Defined balance_color and emoji variables for better readability
+        # This will print the remaining balance with a different color and emoji based on whether it's positive or negative
+
 
 def safe_input_float(prompt: str) -> float:
     while True:
