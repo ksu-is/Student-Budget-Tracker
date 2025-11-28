@@ -9,6 +9,7 @@ class Pastel:
     SOFT_YELLOW = "\033[93m"
     END = "\033[0m"
     BOLD = "\033[1m"
+    # Initializing the Pastel class with color codes
     # I ran this code and no errors yet so that is a good sign :)
 
 # I want to add some sort of art, maybe an ASCI art banner
@@ -21,20 +22,26 @@ BANNER = f"""
 """
 # Ran this code and no errors yet so that is a good sign :)
 # I was hoping to see it but I realized I forgot to add the print function to see it.
-# Removed previous print function
+# Banner looks great after adding the print function
+# Removed previous "print" function
 
 class BudgetTracker:
     def __init__(self):
         self.income = 0.0
         self.expenses = []
+# Initializing the BudgetTracker class with income and expenses attributes
 
     def adding_income(self, amount: float):
         self.income += amount
         print(f"{Pastel.MINT}✨ Income added! Total Income: ${self.income:.2f}{Pastel.END}")
+# Defining the function to add income
+# Will print out the total income after adding the new amount with a sparkle emoji
 
     def adding_expense(self, description: str, amount: float):
         self.expenses.append((description, amount))
         print(f"{Pastel.SOFT_YELLOW}🛒 Expense added: {description} - ${amount:.2f}{Pastel.END}")
+# Def ining the function to add expenses
+# Will print out the description and amount of the expense added, a shopping cart emoji, and a description of the expense added
 
     def total_expenses(self) -> float:
         return sum(amount for _, amount in self.expenses)
@@ -53,14 +60,16 @@ class BudgetTracker:
             for descrpt, amnt in self.expenses:
                 print(f"{Pastel.PEACH}   • {descrpt}: ${amnt:.2f} 🧾{Pastel.END}")
         print(f"{Pastel.LAVENDER}📊 Total Expense: ${self.total_expenses():.2f}{Pastel.END}")
-
+# this function will display the summary of the budget
+# the if else statement will check if there are any expenses recorded yet
+# Will print expenses if there are any
 
         balence = self.remaining_balance()
         balence_color = Pastel.MINT if balence >= 0 else Pastel.PEACH
         emoji = "🎉" if balence >= 0 else "⚠️"
         print(f"{balence_color}🌿 Remaining Balance: ${balence:.2f} {emoji}{Pastel.END}\n")
         # ran this code and no errors yet so that is a good sign :)
-
+    
 
 def safe_input_float(prompt: str) -> float:
     while True:
