@@ -103,4 +103,5 @@ if __name__ == "__main__":
         print(f"3. 📊 {Pastel.LAVENDER}View Summary 📊{Pastel.END}")
         print(f"4. ❌🚪 {Pastel.PEACH}Exit 🚪❌{Pastel.END}")
         # This will print the menu options with corresponding emojis and pastel colors
+        # Ran the code and it was sort of glitching so yikes...
         
