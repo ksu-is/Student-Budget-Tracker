@@ -104,4 +104,17 @@ if __name__ == "__main__":
         print(f"4. ❌🚪 {Pastel.PEACH}Exit 🚪❌{Pastel.END}")
         # This will print the menu options with corresponding emojis and pastel colors
         # Ran the code and it was sort of glitching so yikes...
-        
+
+        choice = input("Enter your choice (1-4): ")
+        # Getting user input for menu choice
+
+        if choice == "1":
+            val = safe_input_float("Enter an income amount: $")
+            if val is not None:
+                tracker.adding_income(val)
+        elif choice == "2":
+            description = input("Enter expense description: ")
+            val = safe_input_float("Enter expense amount: $")
+            if val is not None:
+                tracker.adding_expense(description, val)
+                #Added more and the glitch seems to be fixed now
