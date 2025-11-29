@@ -124,4 +124,7 @@ if __name__ == "__main__":
         elif choice == "3":
             tracker.display_summary()
             # Displaying the budget summary
-            
+        elif choice == "4":
+            print(f"{Pastel.PEACH}👋 Exiting The Budget Tracker. Goodbye!👋 Have a great day! 🌙💖{Pastel.END}")
+            break
+            # Exiting the program with a goodbye message
