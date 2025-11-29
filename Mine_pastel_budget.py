@@ -112,9 +112,16 @@ if __name__ == "__main__":
             val = safe_input_float("Enter an income amount: $")
             if val is not None:
                 tracker.adding_income(val)
+                # Getting user input for income amount and adding it to the tracker
         elif choice == "2":
             description = input("Enter expense description: ")
             val = safe_input_float("Enter expense amount: $")
+            # Getting user input for expense description and amount
             if val is not None:
                 tracker.adding_expense(description, val)
-                #Added more and the glitch seems to be fixed now
+                # Added more and the glitch seems to be fixed now
+                # if function for val is not None to ensure valid input before adding expense
+        elif choice == "3":
+            tracker.display_summary()
+            # Displaying the budget summary
+            
