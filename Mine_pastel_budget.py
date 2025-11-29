@@ -92,3 +92,4 @@ if __name__ == "__main__":
     print (f"{Pastel.LAVENDER}Welcome to the your Budget Tracker! 🌈✨{Pastel.END}")
 # writing the main function to run the budget tracker
 # This will print the banner and a welcome message in lavender color with rainbow and sparkle emojis
+# Going to run the code to see if there are any errors so far
