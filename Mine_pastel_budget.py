@@ -99,7 +99,7 @@ if __name__ == "__main__":
     while True:
         print(f"\n{Pastel.PINK}Choose the option you would like:{Pastel.END}")
         print(f"1. 💰 {Pastel.MINT}Add Income 💰{Pastel.END}")
-        print(f"2. 🛍️ {Pastel.SOFT_YELLOW}Add Expense 🛒{Pastel.END}")
+        print(f"2. 🛍️ {Pastel.SOFT_YELLOW} Add Expense 🛒{Pastel.END}")
         print(f"3. 📊 {Pastel.LAVENDER}View Summary 📊{Pastel.END}")
         print(f"4. ❌🚪 {Pastel.PEACH}Exit 🚪❌{Pastel.END}")
         # This will print the menu options with corresponding emojis and pastel colors
@@ -125,10 +125,9 @@ if __name__ == "__main__":
             tracker.display_summary()
             # Displaying the budget summary
         elif choice == "4":
-            print(f"{Pastel.PEACH}👋 Exiting The Budget Tracker. Goodbye!👋 Have a great day! 🌙💖{Pastel.END}")
+            print(f"{Pastel.PEACH}👋 Exiting The Budget Tracker. Goodbye!👋 Have a great day! 🌙 💖{Pastel.END}")
             break
             # Exiting the program with a goodbye message
         else:
             print(f"{Pastel.PEACH}⚠️ Invalid choice; Try again💗. Please select a valid option (1-4).{Pastel.END}")
             # Function to handle invalid menu choices
-            
