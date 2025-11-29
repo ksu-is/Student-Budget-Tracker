@@ -93,3 +93,14 @@ if __name__ == "__main__":
 # writing the main function to run the budget tracker
 # This will print the banner and a welcome message in lavender color with rainbow and sparkle emojis
 # Going to run the code to see if there are any errors so far
+
+    tracker = BudgetTracker()
+
+    while True:
+        print(f"\n{Pastel.PINK}Choose the option you would like:{Pastel.END}")
+        print(f"1. 💰 {Pastel.MINT}Add Income 💰{Pastel.END}")
+        print(f"2. 🛍️ {Pastel.SOFT_YELLOW}Add Expense 🛒{Pastel.END}")
+        print(f"3. 📊 {Pastel.LAVENDER}View Summary 📊{Pastel.END}")
+        print(f"4. ❌🚪 {Pastel.PEACH}Exit 🚪❌{Pastel.END}")
+        # This will print the menu options with corresponding emojis and pastel colors
+        
