@@ -128,3 +128,7 @@ if __name__ == "__main__":
             print(f"{Pastel.PEACH}👋 Exiting The Budget Tracker. Goodbye!👋 Have a great day! 🌙💖{Pastel.END}")
             break
             # Exiting the program with a goodbye message
+        else:
+            print(f"{Pastel.PEACH}⚠️ Invalid choice; Try again💗. Please select a valid option (1-4).{Pastel.END}")
+            # Function to handle invalid menu choices
+            
