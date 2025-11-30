@@ -7,4 +7,4 @@ This is a program that will allow any students (I would also like for others to 
 
 
 
-Link for Sprint
+Link for Sprint: https://studentbudgettrackerppt.tiiny.site 
